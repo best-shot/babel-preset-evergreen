@@ -1,0 +1,63 @@
+{
+  "name": "babel-preset-evergreen",
+  "version": "0.3.0",
+  "description": "A `babel` preset for popular javascript syntaxes",
+  "license": "MIT",
+  "author": {
+    "name": "Eric Chen",
+    "email": "airkro@qq.com"
+  },
+  "keywords": [
+    "babel",
+    "core-js",
+    "polyfill",
+    "preset",
+    "script",
+    "shim",
+    "transform"
+  ],
+  "homepage": "https://github.com/best-shot/babel-preset-evergreen#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/best-shot/babel-preset-evergreen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/best-shot/babel-preset-evergreen/issues"
+  },
+  "main": "index.js",
+  "files": [],
+  "scripts": {
+    "format": "nice-move lint"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/runtime-corejs3": "^7.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@nice-move/cli": "^0.4.1",
+    "@nice-move/eslint-config-base": "^0.3.4",
+    "@nice-move/prettier-config": "^0.2.4",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.11.0",
+    "core-js": "^3.6.5"
+  },
+  "engines": {
+    "node": "^10.18 || >=12.14"
+  },
+  "eslintConfig": {
+    "extends": "@nice-move/eslint-config-base"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "nice-move lint"
+    }
+  },
+  "prettier": "@nice-move/prettier-config"
+}
