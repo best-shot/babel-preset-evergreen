@@ -1,5 +1,7 @@
 # babel-preset-evergreen
 
+A [babel] preset for popular javascript syntaxes.
+
 [![npm][npm-badge]][npm-url]
 [![license][license-badge]][github-url]
 ![node][node-badge]
@@ -37,19 +39,20 @@ npm install babel-preset-evergreen --save-dev
 
 ### polyfill
 
-- type: [ false, 'usage', 'pure' ]
+- type: [ false, 'global', 'pure' ]
 - default: false
 
 How `babel` handles polyfills. `pure` is an experimental option.
 
 References: <https://github.com/babel/babel/issues/10008>
 
-Install `core-js@3` as a top-level dependency when specifying 'usage' or 'pure'.
+Install `core-js@3` as a top-level dependency when specifying 'global' or 'pure'.
 
 ```bash
 npm install core-js@3 --save
 ```
 
+[babel]: https://github.com/babel/babel
 [npm-url]: https://www.npmjs.com/package/@best-shot/preset-babel
 [npm-badge]: https://img.shields.io/npm/v/@best-shot/preset-babel.svg?style=flat-square&logo=npm
 [github-url]: https://github.com/Airkro/best-shot/tree/master/packages/preset-babel
