@@ -5,6 +5,7 @@ A [babel] preset for popular javascript syntaxes.
 [![npm][npm-badge]][npm-url]
 [![license][license-badge]][github-url]
 ![node][node-badge]
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbest-shot%2Fbabel-preset-evergreen.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbest-shot%2Fbabel-preset-evergreen?ref=badge_shield)
 
 This preset can transform:
 
@@ -57,3 +58,7 @@ npm install core-js@3 --save
 [github-url]: https://github.com/best-shot/babel-preset-evergreen
 [node-badge]: https://img.shields.io/node/v/babel-preset-evergreen.svg?style=flat-square&colorB=green&logo=node.js
 [license-badge]: https://img.shields.io/npm/l/babel-preset-evergreen.svg?style=flat-square&colorB=blue&logo=github
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbest-shot%2Fbabel-preset-evergreen.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbest-shot%2Fbabel-preset-evergreen?ref=badge_large)
