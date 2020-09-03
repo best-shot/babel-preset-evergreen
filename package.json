@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A `babel` preset for popular javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -16,10 +16,10 @@
     "shim",
     "transform"
   ],
-  "homepage": "https://github.com/best-shot/babel-preset-evergreen#readme",
+  "homepage": "https://github.com/best-shot/babel-preset-evergreen",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/best-shot/babel-preset-evergreen.git"
+    "url": "https://github.com/best-shot/babel-preset-evergreen.git"
   },
   "bugs": {
     "url": "https://github.com/best-shot/babel-preset-evergreen/issues"
@@ -31,21 +31,21 @@
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/runtime-corejs3": "^7.11.0"
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/runtime-corejs3": "^7.11.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.0",
-    "@nice-move/cli": "^0.4.1",
-    "@nice-move/eslint-config-base": "^0.3.4",
-    "@nice-move/prettier-config": "^0.2.4",
+    "@babel/core": "^7.11.5",
+    "@nice-move/cli": "^0.4.8",
+    "@nice-move/eslint-config-base": "^0.3.9",
+    "@nice-move/prettier-config": "^0.3.2",
     "eslint": "^6.8.0",
     "husky": "^4.2.5",
-    "prettier": "^2.0.5"
+    "prettier": "^2.1.1"
   },
   "peerDependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.11.5",
     "core-js": "^3.6.5"
   },
   "engines": {

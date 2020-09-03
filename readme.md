@@ -3,8 +3,15 @@
 A [babel] preset for popular javascript syntaxes.
 
 [![npm][npm-badge]][npm-url]
-[![license][license-badge]][github-url]
+[![github][github-badge]][github-url]
 ![node][node-badge]
+
+[babel]: https://github.com/babel/babel
+[npm-url]: https://www.npmjs.com/package/babel-preset-evergreen
+[npm-badge]: https://img.shields.io/npm/v/babel-preset-evergreen.svg?style=flat-square&logo=npm
+[github-url]: https://github.com/best-shot/babel-preset-evergreen
+[github-badge]: https://img.shields.io/npm/l/babel-preset-evergreen.svg?style=flat-square&colorB=blue&logo=github
+[node-badge]: https://img.shields.io/node/v/babel-preset-evergreen.svg?style=flat-square&colorB=green&logo=node.js
 
 This preset can transform:
 
@@ -50,10 +57,3 @@ Install `core-js@3` as a top-level dependency when specifying 'global' or 'pure'
 ```bash
 npm install core-js@3 --save
 ```
-
-[babel]: https://github.com/babel/babel
-[npm-url]: https://www.npmjs.com/package/babel-preset-evergreen
-[npm-badge]: https://img.shields.io/npm/v/babel-preset-evergreen.svg?style=flat-square&logo=npm
-[github-url]: https://github.com/best-shot/babel-preset-evergreen
-[node-badge]: https://img.shields.io/node/v/babel-preset-evergreen.svg?style=flat-square&colorB=green&logo=node.js
-[license-badge]: https://img.shields.io/npm/l/babel-preset-evergreen.svg?style=flat-square&colorB=blue&logo=github

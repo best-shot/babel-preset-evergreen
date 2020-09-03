@@ -20,14 +20,12 @@ module.exports = declare((api, options) => {
     ],
   ];
 
-  const plugins = [
-    ['@babel/transform-runtime', { corejs: 3, useESModules: true }],
-  ];
-
   if (polyfill === 'pure') {
     return {
       presets,
-      plugins,
+      plugins: [
+        ['@babel/transform-runtime', { corejs: 3, useESModules: true }],
+      ],
     };
   }
 
