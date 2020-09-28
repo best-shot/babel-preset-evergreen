@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A `babel` preset for popular javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -33,19 +33,20 @@
     "@babel/helper-plugin-utils": "^7.10.4",
     "@babel/plugin-transform-runtime": "^7.11.5",
     "@babel/preset-env": "^7.11.5",
-    "@babel/runtime-corejs3": "^7.11.2"
+    "@babel/runtime-corejs3": "^7.11.2",
+    "browserslist": "^4.14.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.5",
-    "@nice-move/cli": "^0.4.8",
-    "@nice-move/eslint-config-base": "^0.3.9",
+    "@babel/core": "^7.11.6",
+    "@nice-move/cli": "^0.5.0",
+    "@nice-move/eslint-config-base": "^0.3.11",
     "@nice-move/prettier-config": "^0.3.2",
     "eslint": "^6.8.0",
-    "husky": "^4.2.5",
-    "prettier": "^2.1.1"
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2"
   },
   "peerDependencies": {
-    "@babel/core": "^7.11.5",
+    "@babel/core": "^7.11.6",
     "core-js": "^3.6.5"
   },
   "engines": {

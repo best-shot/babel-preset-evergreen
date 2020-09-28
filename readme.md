@@ -34,7 +34,7 @@ npm install babel-preset-evergreen --save-dev
       "evergreen",
       {
         "polyfill": "global",
-        "targets": {}
+        "targets": "chrome >= 60"
       }
     ]
   ]
@@ -57,3 +57,10 @@ Install `core-js@3` as a top-level dependency when specifying 'global' or 'pure'
 ```bash
 npm install core-js@3 --save
 ```
+
+### targets
+
+- type: `string` | `string[]` | `object`
+- default: `browserslist.loadConfig()`
+
+Describes the environments you support/target for your project.

@@ -1,9 +1,17 @@
 const { declare } = require('@babel/helper-plugin-utils');
+const { loadConfig } = require('browserslist');
+
+function getList() {
+  const config = loadConfig({
+    path: process.cwd(),
+  });
+  return config && config.length > 0 ? config : 'defaults';
+}
 
 module.exports = declare((api, options) => {
   api.assertVersion(7);
 
-  const { polyfill = false, targets = { browsers: 'defaults' } } = options;
+  const { polyfill = false, targets = getList() } = options;
 
   const presets = [
     [
