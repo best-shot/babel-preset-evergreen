@@ -61,6 +61,6 @@ npm install core-js@3 --save
 ### targets
 
 - type: `string` | `string[]` | `object`
-- default: `browserslist.loadConfig()`
+- default: `browserslist.loadConfig() || browserslist.defaults`
 
 Describes the environments you support/target for your project.

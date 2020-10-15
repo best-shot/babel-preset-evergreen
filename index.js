@@ -1,11 +1,11 @@
 const { declare } = require('@babel/helper-plugin-utils');
-const { loadConfig } = require('browserslist');
+const { loadConfig, defaults } = require('browserslist');
 
 function getList() {
   const config = loadConfig({
     path: process.cwd(),
   });
-  return config && config.length > 0 ? config : 'defaults';
+  return config && config.length > 0 ? config : defaults;
 }
 
 module.exports = declare((api, options) => {
