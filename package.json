@@ -1,7 +1,7 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.4.2",
-  "description": "A `babel` preset for popular javascript syntaxes",
+  "version": "0.4.3",
+  "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
     "name": "Eric Chen",
@@ -9,6 +9,8 @@
   },
   "keywords": [
     "babel",
+    "babel-preset",
+    "best-shot",
     "core-js",
     "polyfill",
     "preset",
@@ -32,38 +34,41 @@
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.10.4",
     "@babel/plugin-transform-runtime": "^7.12.1",
-    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
     "@babel/runtime-corejs3": "^7.12.5",
     "browserslist": "^4.14.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@nice-move/cli": "^0.5.5",
-    "@nice-move/eslint-config-base": "^0.3.16",
-    "@nice-move/prettier-config": "^0.3.4",
+    "@babel/core": "^7.12.9",
+    "@nice-move/cli": "^0.5.8",
+    "@nice-move/commitlint-config": "^0.0.0",
+    "@nice-move/eslint-config-base": "^0.4.0",
+    "@nice-move/prettier-config": "^0.3.5",
+    "commitlint": "^11.0.0",
     "eslint": "^6.8.0",
     "husky": "^4.3.0",
-    "prettier": "^2.1.2"
+    "prettier": "^2.2.1"
   },
   "peerDependencies": {
-    "@babel/core": "^7.12.3",
-    "core-js": "^3.7.0"
+    "@babel/core": "^7.12.9",
+    "core-js": "^3.8.0"
   },
   "engines": {
     "node": "^10.18 || ^12.14 || ^14"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "commitlint": {
-    "extends": "@commitlint/config-conventional"
+    "extends": "@nice-move/commitlint-config"
   },
   "eslintConfig": {
     "extends": "@nice-move/eslint-config-base"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "nice-move lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "nice-move lint"
     }
   },
   "prettier": "@nice-move/prettier-config"

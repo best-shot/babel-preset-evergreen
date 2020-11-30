@@ -1,6 +1,6 @@
 # babel-preset-evergreen
 
-A [babel] preset for popular javascript syntaxes.
+A [babel] preset for modern javascript syntaxes.
 
 [![npm][npm-badge]][npm-url]
 [![github][github-badge]][github-url]
