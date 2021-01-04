@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -26,35 +26,35 @@
   "bugs": {
     "url": "https://github.com/best-shot/babel-preset-evergreen/issues"
   },
-  "main": "index.js",
+  "main": "index.cjs",
   "files": [],
   "scripts": {
     "format": "nice-move lint"
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.12.1",
-    "@babel/preset-env": "^7.12.7",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "@babel/runtime-corejs3": "^7.12.5",
-    "browserslist": "^4.14.7"
+    "browserslist": "^4.16.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@nice-move/cli": "^0.5.8",
+    "@babel/core": "^7.12.10",
+    "@nice-move/cli": "^0.5.13",
     "@nice-move/commitlint-config": "^0.0.0",
-    "@nice-move/eslint-config-base": "^0.4.0",
+    "@nice-move/eslint-config-base": "^0.5.13",
     "@nice-move/prettier-config": "^0.3.5",
     "commitlint": "^11.0.0",
-    "eslint": "^6.8.0",
-    "husky": "^4.3.0",
+    "eslint": "^7.17.0",
+    "husky": "^4.3.6",
     "prettier": "^2.2.1"
   },
   "peerDependencies": {
-    "@babel/core": "^7.12.9",
-    "core-js": "^3.8.0"
+    "@babel/core": "^7.12.10",
+    "core-js": "^3.8.2"
   },
   "engines": {
-    "node": "^10.18 || ^12.14 || ^14"
+    "node": "^12.18 || ^14"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -71,5 +71,8 @@
       "pre-commit": "nice-move lint"
     }
   },
-  "prettier": "@nice-move/prettier-config"
+  "prettier": "@nice-move/prettier-config",
+  "x-readme": {
+    "logo": "https://cdn.jsdelivr.net/gh/babel/logo/babel.png"
+  }
 }
