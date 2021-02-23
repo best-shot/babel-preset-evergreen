@@ -23,19 +23,16 @@ module.exports = declare((api, options) => {
         shippedProposals: true,
         spec: true,
         bugfixes: true,
-        targets,
       },
     ],
   ];
 
-  if (polyfill === 'pure') {
-    return {
-      presets,
-      plugins: [
-        ['@babel/transform-runtime', { corejs: 3, useESModules: true }],
-      ],
-    };
-  }
-
-  return { presets };
+  return {
+    targets,
+    presets,
+    plugins:
+      polyfill === 'pure'
+        ? [['@babel/transform-runtime', { corejs: 3 }]]
+        : undefined,
+  };
 });
