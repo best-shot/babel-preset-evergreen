@@ -45,8 +45,10 @@ How `babel` handles polyfills. `pure` is an experimental option.
 
 References: <https://github.com/babel/babel/issues/10008>
 
-Install `core-js@3` as a top-level dependency when specifying 'global' or 'pure'.
+## Tips
 
-```bash
-npm install core-js@3 --save
+You might need to pin `core-js@3` when your project dependency tree has `core-js@2`:
+
+```sh
+npm install core-js@3
 ```
