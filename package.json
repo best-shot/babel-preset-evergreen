@@ -31,7 +31,8 @@
   "main": "index.cjs",
   "files": [],
   "scripts": {
-    "lint": "nice-move lint"
+    "lint": "nice-move lint",
+    "prepare": "git config core.hooksPath .hooks"
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.13.0",
@@ -48,7 +49,6 @@
     "commitlint": "^12.1.1",
     "eslint": "^7.24.0",
     "garou": "^0.1.21",
-    "husky": "^4.3.8",
     "prettier": "^2.2.1"
   },
   "peerDependencies": {
@@ -67,12 +67,6 @@
   },
   "eslintConfig": {
     "extends": "@nice-move/eslint-config-base"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "nice-move lint"
-    }
   },
   "prettier": "@nice-move/prettier-config",
   "x-readme": {
