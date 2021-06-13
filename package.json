@@ -36,13 +36,13 @@
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.13.0",
-    "@babel/plugin-transform-runtime": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
-    "@babel/runtime-corejs3": "^7.14.0",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/runtime-corejs3": "^7.14.5",
     "core-js": "^3.13.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.14.5",
     "@nice-move/cli": "^0.5.22",
     "@nice-move/commitlint-config": "^0.1.3",
     "@nice-move/eslint-config-base": "^0.5.39",
@@ -53,7 +53,7 @@
     "prettier": "^2.3.1"
   },
   "peerDependencies": {
-    "@babel/core": "^7.14.3"
+    "@babel/core": "^7.14.5"
   },
   "engines": {
     "node": "^12.15.0 || ^14.15.3"
