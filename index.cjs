@@ -1,3 +1,5 @@
+'use strict';
+
 const { declare } = require('@babel/helper-plugin-utils');
 
 module.exports = declare((api, options = {}) => {
@@ -11,7 +13,7 @@ module.exports = declare((api, options = {}) => {
       {
         modules: false,
         useBuiltIns: { pure: false, global: 'usage' }[polyfill] || false,
-        ...(polyfill === 'global' ? { corejs: '3.11' } : undefined),
+        ...(polyfill === 'global' ? { corejs: '3.14' } : undefined),
         shippedProposals: true,
         spec: true,
         bugfixes: true,
