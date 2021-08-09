@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -36,24 +36,24 @@
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.14.5",
-    "@babel/plugin-transform-runtime": "^7.14.5",
-    "@babel/preset-env": "^7.14.9",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "@babel/runtime-corejs3": "^7.14.9",
-    "core-js": "^3.15.2"
+    "core-js": "^3.16.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@nice-move/cli": "0.5.28",
-    "@nice-move/commitlint-config": "^0.1.4",
+    "@babel/core": "^7.15.0",
+    "@nice-move/cli": "^0.5.28",
+    "@nice-move/commitlint-config": "^0.2.0",
     "@nice-move/eslint-config-base": "^0.5.58",
-    "@nice-move/prettier-config": "0.4.13",
-    "commitlint": "^12.1.4",
-    "eslint": "^7.31.0",
+    "@nice-move/prettier-config": "^0.4.13",
+    "commitlint": "^13.1.0",
+    "eslint": "^7.32.0",
     "garou": "^0.1.39",
-    "prettier": "2.3.2"
+    "prettier": "^2.3.2"
   },
   "peerDependencies": {
-    "@babel/core": "^7.14.8"
+    "@babel/core": "^7.15.0"
   },
   "engines": {
     "node": "^12.15.0 || ^14.15.3"

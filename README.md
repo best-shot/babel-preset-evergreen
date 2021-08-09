@@ -16,7 +16,7 @@ A [babel] preset for modern javascript syntaxes.
 This preset can transform:
 
 - ECMAScript 2021 syntax
-- Class static properties
+- Class Fields (ECMAScript 2022)
 
 ## Installation
 
