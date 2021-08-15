@@ -49,7 +49,7 @@
     "@nice-move/prettier-config": "^0.4.13",
     "commitlint": "^13.1.0",
     "eslint": "^7.32.0",
-    "garou": "^0.1.39",
+    "garou": "^0.1.40",
     "prettier": "^2.3.2"
   },
   "peerDependencies": {
