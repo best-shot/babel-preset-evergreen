@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -45,7 +45,7 @@
     "@babel/core": "^7.15.5",
     "@nice-move/cli": "^0.5.29",
     "@nice-move/commitlint-config": "^0.2.0",
-    "@nice-move/eslint-config-base": "^0.5.60",
+    "@nice-move/eslint-config-base": "^0.5.61",
     "@nice-move/prettier-config": "^0.4.14",
     "commitlint": "^13.1.0",
     "eslint": "^7.32.0",
@@ -53,7 +53,7 @@
     "prettier": "^2.3.2"
   },
   "peerDependencies": {
-    "@babel/core": "^7.15.0"
+    "@babel/core": "^7.15.5"
   },
   "engines": {
     "node": "^12.15.0 || ^14.15.3"

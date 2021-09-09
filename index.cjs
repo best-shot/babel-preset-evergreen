@@ -13,11 +13,7 @@ module.exports = declare((api, options = {}) => {
       {
         modules: false,
         useBuiltIns: { pure: false, global: 'usage' }[polyfill] || false,
-        ...(polyfill === 'global'
-          ? {
-              corejs: '3.16',
-            }
-          : undefined),
+        ...(polyfill === 'global' ? { corejs: 3 } : undefined),
         shippedProposals: true,
         spec: true,
         bugfixes: true,
