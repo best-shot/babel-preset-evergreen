@@ -45,12 +45,12 @@
     "@babel/core": "^7.15.5",
     "@nice-move/cli": "^0.5.29",
     "@nice-move/commitlint-config": "^0.2.0",
-    "@nice-move/eslint-config-base": "^0.5.61",
+    "@nice-move/eslint-config-base": "^0.5.62",
     "@nice-move/prettier-config": "^0.4.14",
     "commitlint": "^13.1.0",
     "eslint": "^7.32.0",
     "garou": "^0.1.40",
-    "prettier": "^2.3.2"
+    "prettier": "^2.4.0"
   },
   "peerDependencies": {
     "@babel/core": "^7.15.5"
