@@ -39,7 +39,7 @@
     "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.15.6",
     "@babel/runtime-corejs3": "^7.15.4",
-    "core-js": "^3.18.1"
+    "core-js": "^3.18.2"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
