@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -35,25 +35,25 @@
     "prepare": "git config core.hooksPath .githooks"
   },
   "dependencies": {
-    "@babel/helper-plugin-utils": "^7.14.5",
-    "@babel/plugin-transform-runtime": "^7.16.4",
-    "@babel/preset-env": "^7.16.4",
-    "@babel/runtime-corejs3": "^7.16.3",
+    "@babel/helper-plugin-utils": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/runtime-corejs3": "^7.16.5",
     "core-js": "^3.19.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@nice-move/cli": "^0.5.33",
-    "@nice-move/commitlint-config": "^0.3.0",
-    "@nice-move/eslint-config-base": "^0.5.67",
+    "@babel/core": "^7.16.5",
+    "@nice-move/cli": "^0.6.0",
+    "@nice-move/commitlint-config": "^0.4.0",
+    "@nice-move/eslint-config-base": "^0.5.75",
     "@nice-move/prettier-config": "^0.5.1",
-    "commitlint": "^13.2.1",
+    "commitlint": "^15.0.0",
     "eslint": "^7.32.0",
-    "garou": "^0.2.5",
-    "prettier": "^2.4.1"
+    "garou": "^0.3.4",
+    "prettier": "^2.5.1"
   },
   "peerDependencies": {
-    "@babel/core": "^7.16.0"
+    "@babel/core": "^7.16.5"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.13.0"
