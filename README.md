@@ -15,8 +15,7 @@ A [babel] preset for modern javascript syntaxes.
 
 This preset can transform:
 
-- ECMAScript 2021 syntax
-- Class Fields (ECMAScript 2022)
+- ECMAScript 2022 syntax
 
 ## Installation
 
@@ -26,11 +25,18 @@ npm install babel-preset-evergreen --save-dev
 
 ## Usage
 
-```json
+```jsonc
 // example: babel.config.json
 {
   "targets": "chrome >= 60",
-  "presets": [["evergreen", { "polyfill": "global" }]]
+  "presets": [
+    [
+      "evergreen",
+      {
+        "polyfill": "global"
+      }
+    ]
+  ]
 }
 ```
 
