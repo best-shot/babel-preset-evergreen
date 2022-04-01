@@ -38,11 +38,11 @@
     "@babel/helper-plugin-utils": "^7.16.7",
     "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
-    "@babel/runtime-corejs3": "^7.17.2",
+    "@babel/runtime-corejs3": "^7.17.8",
     "core-js": "^3.21.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.5",
+    "@babel/core": "^7.17.8",
     "@nice-move/cli": "^0.7.0",
     "@nice-move/eslint-config-base": "^0.6.1",
     "@nice-move/prettier-config": "^0.5.2",
