@@ -36,13 +36,13 @@
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.18.9",
-    "@babel/plugin-transform-runtime": "^7.18.9",
-    "@babel/preset-env": "^7.18.9",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
     "@babel/runtime-corejs3": "^7.18.9",
     "core-js": "^3.24.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.9",
+    "@babel/core": "^7.18.10",
     "@bring-it/npm": "^0.0.1",
     "@nice-move/cli": "^0.9.7",
     "@nice-move/eslint-config-base": "^0.8.2",
