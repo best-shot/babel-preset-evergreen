@@ -45,10 +45,10 @@
     "@babel/core": "^7.19.3",
     "@bring-it/npm": "^0.1.0",
     "@nice-move/cli": "^0.9.10",
-    "@nice-move/eslint-config-base": "^0.8.12",
+    "@nice-move/eslint-config-base": "^0.8.14",
     "@nice-move/prettier-config": "^0.7.3",
-    "eslint": "^8.23.1",
-    "garou": "^0.5.1",
+    "eslint": "^8.25.0",
+    "garou": "^0.5.2",
     "prettier": "^2.7.1"
   },
   "peerDependencies": {
