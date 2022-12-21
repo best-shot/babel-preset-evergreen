@@ -49,7 +49,7 @@
     "@nice-move/prettier-config": "^0.8.0",
     "eslint": "^8.29.0",
     "garou": "^0.5.4",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.1"
   },
   "peerDependencies": {
     "@babel/core": "^7.20.2"
