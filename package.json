@@ -48,7 +48,7 @@
     "@nice-move/eslint-config-base": "^0.9.3",
     "@nice-move/prettier-config": "^0.8.0",
     "eslint": "^8.29.0",
-    "garou": "^0.5.4",
+    "garou": "^0.6.0",
     "prettier": "^2.8.1"
   },
   "peerDependencies": {
