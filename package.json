@@ -42,7 +42,7 @@
     "core-js": "^3.27.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@bring-it/npm": "^0.1.0",
     "@nice-move/cli": "^0.10.2",
     "@nice-move/eslint-config-base": "^0.9.4",
