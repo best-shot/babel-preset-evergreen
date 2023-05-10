@@ -5,6 +5,8 @@ import test from 'ava';
 
 const src = `
 io.flatMap();
+io.at(-1);
+io.replaceAll(' ')
 `;
 
 function action(options) {
