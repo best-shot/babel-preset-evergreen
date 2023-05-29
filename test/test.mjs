@@ -4,16 +4,25 @@ import babel from '@babel/core';
 import test from 'ava';
 
 const src = `
+import foo from "./foo.json" with { type: "json" };
+import bar from "./bar.json" assert { type: "json" };
+
+import("./foo.json", { with: { type: "json" } });
+import("./bar.json", { assert: { type: "json" } });
+
+globalThis.a();
+
 io.flatMap();
 io.at(-1);
-io.replaceAll(' ')
+io.replaceAll(' ');
+io.matchAll();
 `;
+
+const entry = fileURLToPath(new URL('../index.cjs', import.meta.url));
 
 function action(options) {
   return babel.transformSync(src, {
-    presets: [
-      [fileURLToPath(new URL('../index.cjs', import.meta.url)), options],
-    ],
+    presets: [[entry, options]],
     targets: 'chrome > 67',
     configFile: false,
     babelrc: false,
