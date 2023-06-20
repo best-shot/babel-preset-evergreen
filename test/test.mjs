@@ -16,6 +16,9 @@ io.flatMap();
 io.at(-1);
 io.replaceAll(' ');
 io.matchAll();
+io.toReversed();
+io.toSorted();
+URL.canParse();
 `;
 
 const entry = fileURLToPath(new URL('../index.cjs', import.meta.url));
