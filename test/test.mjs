@@ -19,6 +19,10 @@ io.matchAll();
 io.toReversed();
 io.toSorted();
 URL.canParse();
+
+Object.groupBy(array, (num, index) => {
+  return num % 2 === 0 ? 'even': 'odd';
+});
 `;
 
 const entry = fileURLToPath(new URL('../index.cjs', import.meta.url));
