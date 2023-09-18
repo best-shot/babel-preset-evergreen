@@ -39,24 +39,24 @@
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.22.5",
     "@babel/plugin-transform-runtime": "^7.22.15",
-    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-env": "^7.22.20",
     "@babel/runtime-corejs3": "^7.22.15",
-    "core-js": "^3.32.1"
+    "core-js": "^3.32.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.15",
+    "@babel/core": "^7.22.20",
     "@bring-it/npm": "^0.2.10",
     "@nice-move/cli": "^0.10.11",
     "@nice-move/eslint-config-base": "^0.9.19",
-    "@nice-move/prettier-config": "^0.9.3",
+    "@nice-move/prettier-config": "^0.9.4",
     "ava": "^5.3.1",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "eslint-plugin-ava": "^14.0.0",
     "garou": "^0.6.13",
     "prettier": "^3.0.3"
   },
   "peerDependencies": {
-    "@babel/core": "^7.22.15"
+    "@babel/core": "^7.22.20"
   },
   "engines": {
     "node": ">=18.12.0 || ^16.15.0"

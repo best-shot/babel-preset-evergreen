@@ -23,6 +23,9 @@ URL.canParse();
 Object.groupBy(array, (num, index) => {
   return num % 2 === 0 ? 'even': 'odd';
 });
+
+const d = Promise.withResolvers();
+
 `;
 
 const entry = fileURLToPath(new URL('../index.cjs', import.meta.url));
