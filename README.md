@@ -6,7 +6,7 @@ A [babel] preset for modern javascript syntaxes.
 [![github][github-badge]][github-url]
 ![node][node-badge]
 
-[babel]: https://github.com/babel/babel
+[babel]: https://babel.dev/
 [npm-url]: https://www.npmjs.com/package/babel-preset-evergreen
 [npm-badge]: https://img.shields.io/npm/v/babel-preset-evergreen.svg?style=flat-square&logo=npm
 [github-url]: https://github.com/best-shot/babel-preset-evergreen

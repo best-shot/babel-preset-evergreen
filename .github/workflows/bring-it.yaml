@@ -16,6 +16,7 @@ jobs:
         node:
           - current
           - lts/*
+          - lts/-1
         exclude:
           - os: ubuntu-latest
             node: lts/*
