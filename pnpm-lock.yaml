@@ -47,7 +47,7 @@ devDependencies:
     specifier: ^14.0.0
     version: 14.0.0(eslint@8.57.0)
   garou:
-    specifier: ^0.7.0
+    specifier: ^0.7.1
     version: 0.7.1(eslint@8.57.0)(stylelint@16.2.1)(typescript@5.4.2)
   prettier:
     specifier: ^3.2.5
