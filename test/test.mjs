@@ -26,6 +26,7 @@ Object.groupBy(array, (num, index) => {
 
 const d = Promise.withResolvers();
 
+new URLSearchParams().size
 `;
 
 const entry = fileURLToPath(new URL('../index.cjs', import.meta.url));
