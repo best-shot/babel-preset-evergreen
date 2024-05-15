@@ -15,7 +15,7 @@ A [babel] preset for modern javascript syntaxes.
 
 This preset can transform:
 
-- ECMAScript 2022 syntax
+- ECMAScript 2024 syntax
 
 ## Installation
 

@@ -10,45 +10,51 @@ import bar from "./bar.json" assert { type: "json" };
 import("./foo.json", { with: { type: "json" } });
 import("./bar.json", { assert: { type: "json" } });
 
-globalThis.a();
+const array = [];
+const string = '';
 
-io.flatMap();
-io.at(-1);
-io.replaceAll(' ');
-io.matchAll();
-io.toReversed();
-io.toSorted();
-URL.canParse();
+array.findLastIndex();
+array.at(-1);
+array.toReversed();
+array.toSorted();
+array.groupBy();
 
-Object.groupBy(array, (num, index) => {
-  return num % 2 === 0 ? 'even': 'odd';
-});
+string.at(-2);
+
+const ui = new Set()
+
+ui.intersection()
+
+Object.groupBy(array);
+Map.groupBy(array);
 
 const d = Promise.withResolvers();
 
-new URLSearchParams().size
+URL.canParse();
+
+const usp = new URLSearchParams();
+
+usp.size
 `;
 
 const entry = fileURLToPath(new URL('../index.cjs', import.meta.url));
 
-function action(options) {
+function action(polyfill, targets) {
   return babel.transformSync(src, {
-    presets: [[entry, options]],
-    targets: 'chrome > 67',
+    presets: [[entry, { polyfill }]],
+    targets,
     configFile: false,
     babelrc: false,
     filename: 'a.js',
-  });
+  }).code;
 }
 
 test('global', (t) => {
-  const { code } = action({ polyfill: 'global' });
-
-  t.snapshot(code);
+  t.snapshot(action('global', 'chrome > 67'));
+  t.snapshot(action('global', 'chrome > 120'));
 });
 
 test('pure', (t) => {
-  const { code } = action({ polyfill: 'pure' });
-
-  t.snapshot(code);
+  t.snapshot(action('pure', 'chrome > 67'));
+  t.snapshot(action('pure', 'chrome > 120'));
 });

@@ -7,17 +7,12 @@ module.exports = declare((api, options = {}) => {
 
   const { polyfill = false } = options;
 
-  const pkg = require('./package.json');
-
   const presets = [
     [
       '@babel/env',
       {
         modules: false,
-        useBuiltIns: { pure: false, global: 'usage' }[polyfill] || false,
-        ...(polyfill === 'global'
-          ? { corejs: pkg.dependencies['core-js'] }
-          : undefined),
+        useBuiltIns: false,
         shippedProposals: true,
         spec: true,
         bugfixes: true,
@@ -25,15 +20,18 @@ module.exports = declare((api, options = {}) => {
     ],
   ];
 
+  const pkg = require('./package.json');
+
   return {
     presets,
     plugins: [
-      polyfill === 'pure'
+      polyfill
         ? [
-            '@babel/transform-runtime',
+            'babel-plugin-polyfill-corejs3',
             {
-              corejs: { version: 3, proposals: true },
-              version: pkg.dependencies['@babel/runtime-corejs3'],
+              version: pkg.dependencies['core-js'],
+              proposals: true,
+              method: `usage-${polyfill}`,
             },
           ]
         : undefined,
