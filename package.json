@@ -39,13 +39,13 @@
     "test": "ava --fail-fast"
   },
   "dependencies": {
-    "@babel/helper-plugin-utils": "^7.24.5",
-    "@babel/preset-env": "^7.24.5",
+    "@babel/helper-plugin-utils": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
     "babel-plugin-polyfill-corejs3": "^0.10.4",
     "core-js": "^3.37.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.5",
+    "@babel/core": "^7.24.6",
     "@bring-it/npm": "^0.5.4",
     "@nice-move/cli": "^0.11.12",
     "@nice-move/eslint-config-base": "^0.11.8",
@@ -54,12 +54,12 @@
     "eslint": "^8.57.0",
     "eslint-plugin-ava": "^14.0.0",
     "garou": "^0.7.5",
-    "prettier": "^3.2.5"
+    "prettier": "^3.3.0"
   },
   "peerDependencies": {
-    "@babel/core": "^7.24.5"
+    "@babel/core": "^7.24.6"
   },
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.1.4",
   "engines": {
     "node": ">=18.12.0 || ^16.15.0"
   },
