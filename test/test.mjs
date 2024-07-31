@@ -35,6 +35,9 @@ URL.canParse();
 const usp = new URLSearchParams();
 
 usp.size
+
+let re =
+  /(?<day>[p])|(?<day>[p])/;
 `;
 
 const entry = fileURLToPath(new URL('../index.cjs', import.meta.url));
