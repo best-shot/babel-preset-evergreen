@@ -33,7 +33,9 @@ npm install babel-preset-evergreen --save-dev
     [
       "evergreen",
       {
-        "polyfill": "global"
+        "polyfill": {
+          "usage": "global"
+        }
       }
     ]
   ]
@@ -44,12 +46,27 @@ npm install babel-preset-evergreen --save-dev
 
 ### polyfill
 
-- type: [ false, 'global', 'pure' ]
+- type: false | {}
 - default: false
 
-How `babel` handles polyfills. `pure` is an experimental option.
+### polyfill.usage
+
+- type: ['global','pure']
+- default: 'global'
+
+How `babel` handles polyfills.
 
 References: <https://github.com/babel/babel/issues/10008>
+
+### polyfill.include
+
+- type: string[]
+- example: ['web.url']
+
+### polyfill.exclude
+
+- type: string[]
+- example: ['web.url']
 
 ## Tips
 

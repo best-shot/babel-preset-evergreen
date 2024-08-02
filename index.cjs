@@ -20,21 +20,27 @@ module.exports = declare((api, options = {}) => {
     ],
   ];
 
+  if (!polyfill) {
+    return { presets };
+  }
+
+  const { usage = 'global', include, exclude } = polyfill;
+
   const pkg = require('./package.json');
 
   return {
     presets,
     plugins: [
-      polyfill
-        ? [
-            'babel-plugin-polyfill-corejs3',
-            {
-              version: pkg.dependencies['core-js'],
-              proposals: true,
-              method: `usage-${polyfill}`,
-            },
-          ]
-        : undefined,
-    ].filter(Boolean),
+      [
+        'babel-plugin-polyfill-corejs3',
+        {
+          version: pkg.dependencies['core-js'],
+          proposals: true,
+          method: `usage-${usage}`,
+          include,
+          exclude,
+        },
+      ],
+    ],
   };
 });
