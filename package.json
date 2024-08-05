@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -42,7 +42,8 @@
     "@babel/helper-plugin-utils": "^7.24.8",
     "@babel/preset-env": "^7.25.3",
     "babel-plugin-polyfill-corejs3": "^0.10.6",
-    "core-js": "^3.38.0"
+    "core-js": "^3.38.0",
+    "core-js-pure": "^3.38.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
