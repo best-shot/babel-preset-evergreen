@@ -1,6 +1,7 @@
 'use strict';
 
 const { declare } = require('@babel/helper-plugin-utils');
+const { excludeIfMini } = require('./mini.cjs');
 
 module.exports = declare((api, options = {}) => {
   api.assertVersion(7);
@@ -24,7 +25,7 @@ module.exports = declare((api, options = {}) => {
     return { presets };
   }
 
-  const { usage = 'global', include, exclude } = polyfill;
+  const { usage = 'global', include, exclude, mini = false } = polyfill;
 
   const pkg = require('./package.json');
 
@@ -37,8 +38,8 @@ module.exports = declare((api, options = {}) => {
           version: pkg.dependencies['core-js'],
           proposals: true,
           method: `usage-${usage}`,
-          include,
-          exclude,
+          include: mini ? [...include, 'web.url'] : include,
+          exclude: mini ? [...exclude, ...excludeIfMini] : exclude,
         },
       ],
     ],

@@ -68,6 +68,12 @@ References: <https://github.com/babel/babel/issues/10008>
 - type: string[]
 - example: ['web.url']
 
+### polyfill.mini
+
+- type: boolean
+- default: false
+- description: Use miniprogram presets.
+
 ## Tips
 
 You might need to pin `core-js@3` when your project dependency tree has `core-js@2`:
