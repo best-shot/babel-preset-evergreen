@@ -25,7 +25,12 @@ module.exports = declare((api, options = {}) => {
     return { presets };
   }
 
-  const { usage = 'global', include, exclude, mini = false } = polyfill;
+  const {
+    usage = 'global',
+    include = [],
+    exclude = [],
+    mini = false,
+  } = polyfill;
 
   const pkg = require('./package.json');
 

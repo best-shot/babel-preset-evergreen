@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
