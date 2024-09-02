@@ -1,3 +1,5 @@
+'use strict';
+
 const modules = require('core-js-compat/modules.json');
 
 const miniprogramCompat = [

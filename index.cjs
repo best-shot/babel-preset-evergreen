@@ -47,6 +47,14 @@ module.exports = declare((api, options = {}) => {
           exclude: mini ? [...exclude, ...excludeIfMini] : exclude,
         },
       ],
-    ],
+      mini
+        ? [
+            '@babel/plugin-transform-unicode-property-regex',
+            {
+              useUnicodeFlag: false,
+            },
+          ]
+        : undefined,
+    ].filter(Boolean),
   };
 });
