@@ -31,7 +31,7 @@ importers:
         specifier: ^0.5.9
         version: 0.5.9(@bring-it/cli@0.9.9)
       '@nice-move/all-in-base':
-        specifier: ^0.2.10
+        specifier: ^0.2.14
         version: 0.2.14(@babel/core@7.26.0)(eslint@8.57.1)(garou@0.8.3(eslint@8.57.1)(typescript@5.7.2))(postcss@8.4.49)(prettier@3.4.2)(typescript@5.7.2)
       ava:
         specifier: ^6.2.0
@@ -43,10 +43,10 @@ importers:
         specifier: ^14.0.0
         version: 14.0.0(eslint@8.57.1)
       garou:
-        specifier: ^0.8.1
+        specifier: ^0.8.2
         version: 0.8.3(eslint@8.57.1)(typescript@5.7.2)
       prettier:
-        specifier: ^3.3.3
+        specifier: ^3.4.2
         version: 3.4.2
 
 packages:
@@ -1655,7 +1655,7 @@ packages:
     engines: {node: '>=8'}
 
   imurmurhash@0.1.4:
-    resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
+    resolution: {integrity: sha1-khi5srkoojixPcT7a21XbyMUU+o=}
     engines: {node: '>=0.8.19'}
 
   indent-string@4.0.0:
