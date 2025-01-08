@@ -1,5 +1,4 @@
 import foo from './foo.json' with { type: 'json' };
-import bar from './bar.json' assert { type: 'json' };
 
 import('./foo.json', { with: { type: 'json' } });
 import('./bar.json', { assert: { type: 'json' } });

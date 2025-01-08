@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.10.9",
+  "version": "0.11.0",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -44,35 +44,29 @@
     "@babel/helper-plugin-utils": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "babel-plugin-polyfill-corejs3": "^0.11.0",
-    "core-js": "^3.39.0",
-    "core-js-compat": "^3.39.0"
+    "core-js": "^3.40.0",
+    "core-js-compat": "^3.40.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@bring-it/npm": "^0.5.9",
-    "@nice-move/all-in-base": "^0.2.10",
+    "@nice-move/all-in-base": "^0.4.2",
     "ava": "^6.2.0",
-    "eslint": "^8.57.1",
-    "eslint-plugin-ava": "^14.0.0",
-    "garou": "^0.8.1",
-    "prettier": "^3.3.3"
+    "eslint": "^9.17.0",
+    "garou": "^0.9.3",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
   },
   "peerDependencies": {
     "@babel/core": "^7.26.0"
   },
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.15.3",
   "engines": {
-    "node": ">=18.12.0 || ^16.15.0"
+    "node": ">=20.0.0"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "eslintConfig": {
-    "extends": "@nice-move/eslint-config-base",
-    "ignorePatterns": [
-      "**/snapshots/**"
-    ]
   },
   "prettier": "@nice-move/prettier-config",
   "x-readme": {
