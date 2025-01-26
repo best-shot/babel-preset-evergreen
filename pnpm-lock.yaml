@@ -32,7 +32,7 @@ importers:
         version: 0.5.9(@bring-it/cli@0.9.9)
       '@nice-move/all-in-base':
         specifier: ^0.4.8
-        version: 0.4.8(@babel/core@7.26.7)(@typescript-eslint/parser@8.21.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(garou@0.9.3(eslint@9.19.0)(typescript@5.7.3))(postcss@8.4.47)(prettier@3.4.2)(typescript@5.7.3)
+        version: 0.4.8(@babel/core@7.26.7)(@typescript-eslint/parser@8.21.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(garou@0.9.3(eslint@9.19.0)(typescript@5.7.3))(postcss@8.5.1)(prettier@3.4.2)(typescript@5.7.3)
       ava:
         specifier: ^6.2.0
         version: 6.2.0
@@ -2159,8 +2159,8 @@ packages:
     peerDependencies:
       postcss: ^8.4.29
 
-  postcss@8.4.49:
-    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
+  postcss@8.5.1:
+    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -3417,11 +3417,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@nice-move/all-in-base@0.4.8(@babel/core@7.26.7)(@typescript-eslint/parser@8.21.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(garou@0.9.3(eslint@9.19.0)(typescript@5.7.3))(postcss@8.4.47)(prettier@3.4.2)(typescript@5.7.3)':
+  '@nice-move/all-in-base@0.4.8(@babel/core@7.26.7)(@typescript-eslint/parser@8.21.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(garou@0.9.3(eslint@9.19.0)(typescript@5.7.3))(postcss@8.5.1)(prettier@3.4.2)(typescript@5.7.3)':
     dependencies:
       '@nice-move/cli': 0.11.19
       '@nice-move/eslint-config-base': 0.12.8(@typescript-eslint/parser@8.21.0(eslint@9.19.0)(typescript@5.7.3))(eslint@9.19.0)(typescript@5.7.3)
-      '@nice-move/prettier-config': 0.14.11(@babel/core@7.26.7)(postcss@8.4.47)(prettier@3.4.2)
+      '@nice-move/prettier-config': 0.14.11(@babel/core@7.26.7)(postcss@8.5.1)(prettier@3.4.2)
       '@nice-move/tsconfig': 0.2.7(typescript@5.7.3)
       eslint: 9.19.0
       prettier: 3.4.2
@@ -3474,7 +3474,7 @@ snapshots:
       globals: 15.14.0
       node-html-parser: 7.0.1
 
-  '@nice-move/prettier-config@0.14.11(@babel/core@7.26.7)(postcss@8.4.47)(prettier@3.4.2)':
+  '@nice-move/prettier-config@0.14.11(@babel/core@7.26.7)(postcss@8.5.1)(prettier@3.4.2)':
     dependencies:
       '@babel/plugin-syntax-import-attributes': 7.26.0(@babel/core@7.26.7)
       '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.7)
@@ -3483,7 +3483,7 @@ snapshots:
       '@nice-move/prettier-plugin-package-json': 0.9.0(prettier@3.4.2)
       '@prettier/plugin-xml': 3.4.1(prettier@3.4.2)
       prettier: 3.4.2
-      prettier-plugin-css-order: 2.1.2(postcss@8.4.49)(prettier@3.4.2)
+      prettier-plugin-css-order: 2.1.2(postcss@8.5.1)(prettier@3.4.2)
       prettier-plugin-ini: 1.3.0
       settingz: 0.2.0
     transitivePeerDependencies:
@@ -4012,9 +4012,9 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  css-declaration-sorter@7.2.0(postcss@8.4.49):
+  css-declaration-sorter@7.2.0(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
   css-select@5.1.0:
     dependencies:
@@ -5113,15 +5113,15 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-less@6.0.0(postcss@8.4.49):
+  postcss-less@6.0.0(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
-  postcss-scss@4.0.9(postcss@8.4.49):
+  postcss-scss@4.0.9(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
-  postcss@8.4.49:
+  postcss@8.5.1:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.1.1
@@ -5129,11 +5129,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-css-order@2.1.2(postcss@8.4.49)(prettier@3.4.2):
+  prettier-plugin-css-order@2.1.2(postcss@8.5.1)(prettier@3.4.2):
     dependencies:
-      css-declaration-sorter: 7.2.0(postcss@8.4.49)
-      postcss-less: 6.0.0(postcss@8.4.49)
-      postcss-scss: 4.0.9(postcss@8.4.49)
+      css-declaration-sorter: 7.2.0(postcss@8.5.1)
+      postcss-less: 6.0.0(postcss@8.5.1)
+      postcss-scss: 4.0.9(postcss@8.5.1)
       prettier: 3.4.2
     transitivePeerDependencies:
       - postcss
