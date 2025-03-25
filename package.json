@@ -42,13 +42,13 @@
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.26.5",
-    "@babel/preset-env": "^7.26.7",
+    "@babel/preset-env": "^7.26.9",
     "babel-plugin-polyfill-corejs3": "^0.11.1",
-    "core-js": "^3.40.0",
-    "core-js-compat": "^3.40.0"
+    "core-js": "^3.41.0",
+    "core-js-compat": "^3.41.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.7",
+    "@babel/core": "^7.26.10",
     "@bring-it/npm": "^0.5.9",
     "@nice-move/all-in-base": "^0.4.8",
     "ava": "^6.2.0",
