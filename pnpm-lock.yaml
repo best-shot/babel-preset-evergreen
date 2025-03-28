@@ -29,10 +29,10 @@ importers:
         version: 7.26.10
       '@bring-it/npm':
         specifier: ^0.6.0
-        version: 0.6.0(@bring-it/cli@0.9.9)
+        version: 0.6.0(@bring-it/cli@0.10.0)
       '@nice-move/all-in-base':
         specifier: ^0.4.15
-        version: 0.4.15(@babel/core@7.26.10)(@typescript-eslint/parser@8.28.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(garou@0.9.5(eslint@9.23.0)(typescript@5.8.2))(postcss@8.5.1)(prettier@3.5.3)(typescript@5.8.2)
+        version: 0.4.15(@babel/core@7.26.10)(@typescript-eslint/parser@8.28.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(garou@0.9.5(eslint@9.23.0)(typescript@5.8.2))(postcss@8.5.3)(prettier@3.5.3)(typescript@5.8.2)
       ava:
         specifier: ^6.2.0
         version: 6.2.0
@@ -552,9 +552,9 @@ packages:
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
 
-  '@bring-it/cli@0.9.9':
-    resolution: {integrity: sha512-/g5lDw3/x/JXrq7dxkGmBDGzCJpfnEjAs6JWHhIl5GR1y5QhNOipWxDfPpCAl7plAGis1d7/fXDGhjW57KinOw==}
-    engines: {node: '>=22.0.0 || ^18.20.0 || ^20.4.0'}
+  '@bring-it/cli@0.10.0':
+    resolution: {integrity: sha512-dYQRXLJ1fmH66rpeEjX9zDFcMqTiAshPkR7xHJQHoOXdQQWpbiV/MyDGJw2PhTCPuxLHaxh1MCZfctmq7M7nDw==}
+    engines: {node: '>=22.11.0 || ^20.18.1'}
     hasBin: true
 
   '@bring-it/npm@0.6.0':
@@ -2132,8 +2132,8 @@ packages:
     peerDependencies:
       postcss: ^8.4.29
 
-  postcss@8.5.1:
-    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+  postcss@8.5.3:
+    resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -3269,14 +3269,14 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@bring-it/cli@0.9.9':
+  '@bring-it/cli@0.10.0':
     dependencies:
       globby: 14.1.0
       yargs: 17.7.2
 
-  '@bring-it/npm@0.6.0(@bring-it/cli@0.9.9)':
+  '@bring-it/npm@0.6.0(@bring-it/cli@0.10.0)':
     dependencies:
-      '@bring-it/cli': 0.9.9
+      '@bring-it/cli': 0.10.0
 
   '@eslint-community/eslint-plugin-eslint-comments@4.4.1(eslint@9.23.0)':
     dependencies:
@@ -3384,11 +3384,11 @@ snapshots:
       - encoding
       - supports-color
 
-  '@nice-move/all-in-base@0.4.15(@babel/core@7.26.10)(@typescript-eslint/parser@8.28.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(garou@0.9.5(eslint@9.23.0)(typescript@5.8.2))(postcss@8.5.1)(prettier@3.5.3)(typescript@5.8.2)':
+  '@nice-move/all-in-base@0.4.15(@babel/core@7.26.10)(@typescript-eslint/parser@8.28.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(garou@0.9.5(eslint@9.23.0)(typescript@5.8.2))(postcss@8.5.3)(prettier@3.5.3)(typescript@5.8.2)':
     dependencies:
       '@nice-move/cli': 0.11.21
       '@nice-move/eslint-config-base': 0.12.13(@typescript-eslint/parser@8.28.0(eslint@9.23.0)(typescript@5.8.2))(eslint@9.23.0)(typescript@5.8.2)
-      '@nice-move/prettier-config': 0.14.12(@babel/core@7.26.10)(postcss@8.5.1)(prettier@3.5.3)
+      '@nice-move/prettier-config': 0.14.12(@babel/core@7.26.10)(postcss@8.5.3)(prettier@3.5.3)
       '@nice-move/tsconfig': 0.2.9(typescript@5.8.2)
       eslint: 9.23.0
       prettier: 3.5.3
@@ -3441,7 +3441,7 @@ snapshots:
       globals: 15.15.0
       node-html-parser: 7.0.1
 
-  '@nice-move/prettier-config@0.14.12(@babel/core@7.26.10)(postcss@8.5.1)(prettier@3.5.3)':
+  '@nice-move/prettier-config@0.14.12(@babel/core@7.26.10)(postcss@8.5.3)(prettier@3.5.3)':
     dependencies:
       '@babel/plugin-syntax-import-attributes': 7.26.0(@babel/core@7.26.10)
       '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.10)
@@ -3450,7 +3450,7 @@ snapshots:
       '@nice-move/prettier-plugin-package-json': 0.9.0(prettier@3.5.3)
       '@prettier/plugin-xml': 3.4.1(prettier@3.5.3)
       prettier: 3.5.3
-      prettier-plugin-css-order: 2.1.2(postcss@8.5.1)(prettier@3.5.3)
+      prettier-plugin-css-order: 2.1.2(postcss@8.5.3)(prettier@3.5.3)
       prettier-plugin-ini: 1.3.0
       settingz: 0.2.0
     transitivePeerDependencies:
@@ -3980,9 +3980,9 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  css-declaration-sorter@7.2.0(postcss@8.5.1):
+  css-declaration-sorter@7.2.0(postcss@8.5.3):
     dependencies:
-      postcss: 8.5.1
+      postcss: 8.5.3
 
   css-select@5.1.0:
     dependencies:
@@ -5045,15 +5045,15 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-less@6.0.0(postcss@8.5.1):
+  postcss-less@6.0.0(postcss@8.5.3):
     dependencies:
-      postcss: 8.5.1
+      postcss: 8.5.3
 
-  postcss-scss@4.0.9(postcss@8.5.1):
+  postcss-scss@4.0.9(postcss@8.5.3):
     dependencies:
-      postcss: 8.5.1
+      postcss: 8.5.3
 
-  postcss@8.5.1:
+  postcss@8.5.3:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -5061,11 +5061,11 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-css-order@2.1.2(postcss@8.5.1)(prettier@3.5.3):
+  prettier-plugin-css-order@2.1.2(postcss@8.5.3)(prettier@3.5.3):
     dependencies:
-      css-declaration-sorter: 7.2.0(postcss@8.5.1)
-      postcss-less: 6.0.0(postcss@8.5.1)
-      postcss-scss: 4.0.9(postcss@8.5.1)
+      css-declaration-sorter: 7.2.0(postcss@8.5.3)
+      postcss-less: 6.0.0(postcss@8.5.3)
+      postcss-scss: 4.0.9(postcss@8.5.3)
       prettier: 3.5.3
     transitivePeerDependencies:
       - postcss
