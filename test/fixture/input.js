@@ -6,6 +6,8 @@ import('./bar.json', { assert: { type: 'json' } });
 const array = [];
 const string = '';
 
+globalThis.addEventListener();
+
 array.findLastIndex();
 array.at(-1);
 array.toReversed();
