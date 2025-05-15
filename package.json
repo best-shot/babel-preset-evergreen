@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.11.3",
+  "version": "0.11.4",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/best-shot/babel-preset-evergreen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/best-shot/babel-preset-evergreen.git"
+    "url": "git+https://github.com/best-shot/babel-preset-evergreen.git"
   },
   "bugs": {
     "url": "https://github.com/best-shot/babel-preset-evergreen/issues"
@@ -41,27 +41,27 @@
     "test": "ava --fail-fast"
   },
   "dependencies": {
-    "@babel/helper-plugin-utils": "^7.26.5",
-    "@babel/preset-env": "^7.26.9",
+    "@babel/helper-plugin-utils": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
     "babel-plugin-polyfill-corejs3": "^0.12.0",
     "core-js": "^3.42.0",
     "core-js-compat": "^3.42.0",
     "miniprogram-compat": "^1.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.10",
+    "@babel/core": "^7.27.1",
     "@bring-it/npm": "^0.6.0",
-    "@nice-move/all-in-base": "^0.4.23",
-    "ava": "^6.2.0",
-    "eslint": "^9.25.1",
-    "garou": "^0.9.5",
+    "@nice-move/all-in-base": "^0.4.26",
+    "ava": "^6.3.0",
+    "eslint": "^9.26.0",
+    "garou": "^0.9.7",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@babel/core": "^7.26.10"
+    "@babel/core": "^7.27.1"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": "^10.10.0"
