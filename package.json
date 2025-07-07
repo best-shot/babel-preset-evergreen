@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.11.5",
+  "version": "0.11.6",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -42,26 +42,26 @@
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.27.1",
-    "@babel/preset-env": "^7.27.2",
-    "babel-plugin-polyfill-corejs3": "^0.12.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-plugin-polyfill-corejs3": "^0.13.0",
     "core-js": "^3.43.0",
     "core-js-compat": "^3.43.0",
     "miniprogram-compat": "^1.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.27.4",
-    "@bring-it/npm": "^0.6.0",
-    "@nice-move/all-in-base": "^0.4.30",
+    "@babel/core": "^7.28.0",
+    "@bring-it/npm": "^0.6.1",
+    "@nice-move/all-in-base": "^0.5.3",
     "ava": "^6.4.0",
-    "eslint": "^9.29.0",
-    "garou": "^0.9.9",
-    "prettier": "^3.5.3",
+    "eslint": "^9.30.1",
+    "garou": "^0.9.11",
+    "prettier": "~3.5.3",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@babel/core": "^7.27.4"
+    "@babel/core": "^7.28.0"
   },
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.4",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": "^10.10.0"
