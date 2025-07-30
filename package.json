@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
-    "@bring-it/npm": "^0.6.1",
+    "@bring-it/npm": "^0.8.3",
     "@nice-move/all-in-base": "^0.5.3",
     "ava": "^6.4.0",
     "eslint": "^9.30.1",
