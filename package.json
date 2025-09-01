@@ -1,11 +1,10 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.11.7",
+  "version": "0.11.8",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
-    "name": "Eric Chen",
-    "email": "airkro@qq.com"
+    "name": "Eric Chen"
   },
   "keywords": [
     "babel",
@@ -42,26 +41,26 @@
   },
   "dependencies": {
     "@babel/helper-plugin-utils": "^7.27.1",
-    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-env": "^7.28.3",
     "babel-plugin-polyfill-corejs3": "^0.13.0",
-    "core-js": "^3.44.0",
-    "core-js-compat": "^3.44.0",
+    "core-js": "^3.45.1",
+    "core-js-compat": "^3.45.1",
     "miniprogram-compat": "^1.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.0",
-    "@bring-it/npm": "^0.6.1",
-    "@nice-move/all-in-base": "^0.5.3",
-    "ava": "^6.4.0",
-    "eslint": "^9.30.1",
-    "garou": "^0.9.11",
+    "@babel/core": "^7.28.3",
+    "@bring-it/npm": "^0.8.3",
+    "@nice-move/all-in-base": "^0.6.8",
+    "ava": "^6.4.1",
+    "eslint": "^9.34.0",
+    "garou": "^0.9.13",
     "prettier": "~3.6.2",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
-    "@babel/core": "^7.28.0"
+    "@babel/core": "^7.28.3"
   },
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.15.0",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": "^10.10.0"
