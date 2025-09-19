@@ -48,7 +48,7 @@
     "miniprogram-compat": "^1.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.3",
+    "@babel/core": "^7.28.4",
     "@bring-it/npm": "^0.8.3",
     "@nice-move/all-in-base": "^0.6.8",
     "ava": "^6.4.1",
@@ -58,7 +58,7 @@
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
-    "@babel/core": "^7.28.3"
+    "@babel/core": "^7.28.4"
   },
   "packageManager": "pnpm@10.15.0",
   "engines": {
