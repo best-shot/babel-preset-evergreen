@@ -28,7 +28,7 @@ importers:
         version: 1.0.5
     devDependencies:
       '@babel/core':
-        specifier: ^7.28.3
+        specifier: ^7.28.4
         version: 7.28.4
       '@bring-it/npm':
         specifier: ^0.8.3
