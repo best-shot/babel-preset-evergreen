@@ -55,7 +55,7 @@
     "eslint": "^9.34.0",
     "garou": "^0.9.13",
     "prettier": "~3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "@babel/core": "^7.28.3"
