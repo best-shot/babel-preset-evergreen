@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.11.9",
+  "version": "0.11.10",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -33,41 +33,51 @@
   ],
   "type": "commonjs",
   "scripts": {
+    "lint:eslint": "eslint . --quiet --fix --concurrency=auto",
     "lint:staged": "nice-move lint staged",
+    "lint:type": "tsc -p tsconfig.json",
+    "lint:version": "syncpack lint",
     "prepare": "nice-move git hooks",
-    "prepublishOnly": "pnpm run lint:staged && pnpm test",
-    "snapshot": "ava --fail-fast -u -w",
-    "test": "ava --fail-fast"
+    "prepublishOnly": "pnpm run lint:staged && pnpm run lint:type && pnpm test",
+    "snapshot": "ava --fail-fast -u",
+    "test": "ava --fail-fast",
+    "version:pin": "syncpack fix-mismatches"
   },
   "dependencies": {
-    "@babel/helper-plugin-utils": "^7.27.1",
-    "@babel/preset-env": "^7.28.5",
+    "@babel/helper-plugin-utils": "^7.28.6",
+    "@babel/preset-env": "^7.28.6",
     "babel-plugin-polyfill-corejs3": "^0.13.0",
     "core-js": "^3.47.0",
     "core-js-compat": "^3.47.0",
     "miniprogram-compat": "^1.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.5",
+    "@babel/core": "^7.28.6",
     "@bring-it/npm": "^0.9.3",
-    "@nice-move/all-in-base": "^0.6.30",
+    "@nice-move/all-in-base": "^0.6.33",
+    "@types/babel__core": "^7.20.5",
     "ava": "^6.4.1",
     "eslint": "^9.39.2",
     "garou": "^0.9.17",
-    "prettier": "~3.7.4",
-    "typescript": "^5.9.3"
+    "prettier": "~3.8.0",
+    "typescript": "~5.9.3"
   },
   "peerDependencies": {
-    "@babel/core": "^7.28.5"
+    "@babel/core": "^7.28.6"
   },
-  "packageManager": "pnpm@10.23.0",
+  "packageManager": "pnpm@10.28.1",
   "engines": {
     "node": ">=20.18.0",
-    "pnpm": "^10.23.0"
+    "pnpm": "^10.28.0"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "ava": {
+    "extensions": [
+      "mts"
+    ]
   },
   "prettier": "@nice-move/prettier-config",
   "x-readme": {

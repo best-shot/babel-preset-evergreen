@@ -51,7 +51,7 @@ npm install babel-preset-evergreen --save-dev
 
 ### polyfill.usage
 
-- type: ['global','pure']
+- type: 'global' | 'pure'
 - default: 'global'
 
 How `babel` handles polyfills.

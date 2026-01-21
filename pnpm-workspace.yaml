@@ -1,0 +1,3 @@
+configDependencies:
+  pnpm-plugin-nice-move: 0.2.3+sha512-oxnMoaXFeXjhXM1mY4oUU1MSdZTB0wsf7Mlq8nJmZQUskZ94uZZH7axRpJsk92Hanh8PjfKnVsy3MNZSXMbJ/Q==
+shamefullyHoist: true

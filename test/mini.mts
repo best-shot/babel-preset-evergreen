@@ -1,7 +1,7 @@
 import test from 'ava';
 import { excludeIfMini } from '../mini.cjs';
 
-import { marco } from './helper/lib.mjs';
+import { marco } from './helper/lib.mts';
 
 test('mini-presets', (t) => {
   t.snapshot(excludeIfMini);

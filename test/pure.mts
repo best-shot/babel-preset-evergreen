@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import { marco } from './helper/lib.mjs';
+import { marco } from './helper/lib.mts';
 
 test('pure', marco, {
   polyfill: {
