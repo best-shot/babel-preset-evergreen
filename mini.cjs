@@ -11,6 +11,6 @@ const mini = [
       item.replace('es.', 'esnext.'),
     ]),
   ),
-].sort();
+].toSorted();
 
 exports.excludeIfMini = mini.filter((item) => modules.includes(item));
