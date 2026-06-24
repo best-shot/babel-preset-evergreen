@@ -1,5 +1,5 @@
 import test from 'ava';
-import { excludeIfMini } from '../mini.cjs';
+import { excludeIfMini } from '../mini.mjs';
 
 import { marco } from './helper/lib.mts';
 

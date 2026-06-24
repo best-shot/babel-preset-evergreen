@@ -29,6 +29,9 @@ npm install babel-preset-evergreen --save-dev
 // example: babel.config.json
 {
   "targets": "chrome >= 60",
+  "assumptions": {
+    "noNewArrows": false
+  },
   "presets": [
     [
       "evergreen",

@@ -1,11 +1,9 @@
-'use strict';
+import { declare } from '@babel/helper-plugin-utils';
+import { excludeIfMini } from './mini.mjs';
+import pkg from './package.json' with { type: 'json' };
 
-const { declare } = require('@babel/helper-plugin-utils');
-const { excludeIfMini } = require('./mini.cjs');
-
-module.exports = declare((api, options = {}) => {
-  api.assertVersion(7);
-
+export default declare((api, options = {}) => {
+  api.assertVersion(8);
   const { polyfill = false } = options;
 
   const presets = [
@@ -15,25 +13,21 @@ module.exports = declare((api, options = {}) => {
         modules: false,
         useBuiltIns: false,
         shippedProposals: true,
-        spec: true,
-        bugfixes: true,
+        corejs: pkg.dependencies['core-js'],
       },
     ],
   ];
-
   if (!polyfill) {
-    return { presets };
+    return {
+      presets,
+    };
   }
-
   const {
     usage = 'global',
     include = [],
     exclude = [],
     mini = false,
   } = polyfill;
-
-  const pkg = require('./package.json');
-
   return {
     presets,
     plugins: [

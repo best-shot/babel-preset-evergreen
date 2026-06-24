@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-evergreen",
-  "version": "0.11.12",
+  "version": "0.12.0",
   "description": "A `babel` preset for modern javascript syntaxes",
   "license": "MIT",
   "author": {
@@ -27,11 +27,11 @@
   "bugs": {
     "url": "https://github.com/best-shot/babel-preset-evergreen/issues"
   },
-  "main": "index.cjs",
+  "main": "index.mjs",
   "files": [
-    "mini.cjs"
+    "mini.mjs"
   ],
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "lint:eslint": "eslint . --quiet --fix --concurrency=auto",
     "lint:staged": "nice-move lint staged",
@@ -39,23 +39,22 @@
     "lint:version": "syncpack lint",
     "prepare": "nice-move git hooks",
     "prepublishOnly": "pnpm run lint:staged && pnpm run lint:type && pnpm test",
-    "snapshot": "ava --fail-fast -u",
+    "snapshot": "ava --fail-fast -u -w",
     "test": "ava --fail-fast",
     "version:pin": "syncpack fix-mismatches"
   },
   "dependencies": {
-    "@babel/helper-plugin-utils": "^7.29.7",
-    "@babel/preset-env": "^7.29.7",
-    "babel-plugin-polyfill-corejs3": "^0.14.2",
+    "@babel/helper-plugin-utils": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "babel-plugin-polyfill-corejs3": "^1.0.0",
     "core-js": "^3.49.0",
     "core-js-compat": "^3.49.0",
     "miniprogram-compat": "^1.0.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.7",
+    "@babel/core": "^8.0.1",
     "@bring-it/npm": "^0.9.3",
     "@nice-move/all-in-base": "^0.8.6",
-    "@types/babel__core": "^7.20.5",
     "ava": "^8.0.1",
     "eslint": "^9.39.4",
     "garou": "^0.9.21",
@@ -63,9 +62,9 @@
     "typescript": "~6.0.3"
   },
   "peerDependencies": {
-    "@babel/core": "^7.29.0"
+    "@babel/core": "^8.0.1"
   },
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@10.34.4",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": "^10.28.0"

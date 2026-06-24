@@ -1,6 +1,6 @@
 import { fileURLToPath } from 'node:url';
 
-import babel from '@babel/core';
+import { transformSync } from '@babel/core';
 
 import { readFileSync } from 'node:fs';
 import type { ExecutionContext } from 'ava';
@@ -10,7 +10,7 @@ const src = readFileSync(
   'utf8',
 );
 
-const entry = fileURLToPath(new URL('../../index.cjs', import.meta.url));
+const entry = fileURLToPath(new URL('../../index.mjs', import.meta.url));
 
 type Options = {
   polyfill?:
@@ -24,8 +24,11 @@ type Options = {
 };
 
 function action(options: Options, targets: string[]) {
-  return babel.transformSync(src, {
+  return transformSync(src, {
     presets: [[entry, options]],
+    assumptions: {
+      noNewArrows: false,
+    },
     targets,
     configFile: false,
     babelrc: false,
