@@ -4,8 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-pnpmfileChecksum: sha256-3TTT5+T7z8fyIcBKGYaiM6dJd4UHX3OA8Tc9HK1GIkk=
-
 importers:
 
   .:
@@ -33,8 +31,8 @@ importers:
         specifier: ^8.0.1
         version: 8.0.1
       '@bring-it/npm':
-        specifier: ^0.9.3
-        version: 0.9.3(@bring-it/cli@0.11.1)
+        specifier: ^0.9.6
+        version: 0.9.6(@bring-it/cli@0.11.1)
       '@nice-move/all-in-base':
         specifier: ^0.8.6
         version: 0.8.6(@babel/core@8.0.1)(@typescript-eslint/utils@8.62.0(eslint@9.39.4)(typescript@6.0.3))(eslint-import-resolver-node@0.3.10)(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4))(eslint@9.39.4)(garou@0.9.21(eslint-import-resolver-node@0.3.10)(eslint@9.39.4)(typescript@6.0.3))(postcss@8.5.6)(prettier@3.8.4)(ts-declaration-location@1.0.7(typescript@6.0.3))(typescript@6.0.3)
@@ -563,12 +561,12 @@ packages:
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  '@bring-it/npm@0.9.3':
-    resolution: {integrity: sha512-nNePVVsVH56dEvzInz7toTNxiK6yTs1vu2JKlXN7IwWshOOmYI8wc8MjTjk1/nN4XLAH/abv3AgnQGPQmCdm6w==}
-    engines: {node: '>=22.18.0', npm: ^10.5.0, pnpm: ^10.20.0}
+  '@bring-it/npm@0.9.6':
+    resolution: {integrity: sha512-YXum1yFAxtgjJLKRzliRh1+oM9xpS84N4S5NE9cK17Vs0vBTtinLV5dNNDeC9uAGgCazUH9h2vPDWWGfsKGohg==}
+    engines: {node: '>=22.22.2', npm: ^11.0.0, pnpm: ^10.33.0}
     hasBin: true
     peerDependencies:
-      '@bring-it/cli': ^0.11.1
+      '@bring-it/cli': ^0.11.2
 
   '@cto.af/wtf8@0.0.5':
     resolution: {integrity: sha512-LfUFi+Vv4eDzj+XAtR89e3wwjXA/NZjUSwU5NhwbBrLecxPaBYFy3exCuc1j+D4UZeOVdqlsl8G7LmOt18V0tg==}
@@ -3520,7 +3518,7 @@ snapshots:
       globby: 15.0.0
       yargs: 18.0.0
 
-  '@bring-it/npm@0.9.3(@bring-it/cli@0.11.1)':
+  '@bring-it/npm@0.9.6(@bring-it/cli@0.11.1)':
     dependencies:
       '@bring-it/cli': 0.11.1
 
