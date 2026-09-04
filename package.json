@@ -54,11 +54,11 @@
   "devDependencies": {
     "@babel/core": "^8.0.1",
     "@bring-it/npm": "^0.9.3",
-    "@nice-move/all-in-base": "^0.8.6",
+    "@nice-move/all-in-base": "^0.8.14",
     "ava": "^8.0.1",
-    "eslint": "^9.39.4",
+    "eslint": "^9.39.5",
     "garou": "^0.9.21",
-    "prettier": "~3.8.4",
+    "prettier": "~3.9.6",
     "typescript": "~6.0.3"
   },
   "peerDependencies": {
