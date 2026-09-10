@@ -47,8 +47,8 @@
     "@babel/helper-plugin-utils": "^8.0.1",
     "@babel/preset-env": "^8.0.2",
     "babel-plugin-polyfill-corejs3": "^1.0.0",
-    "core-js": "^3.49.0",
-    "core-js-compat": "^3.49.0",
+    "core-js": "^3.50.0",
+    "core-js-compat": "^3.50.0",
     "miniprogram-compat": "^1.0.5"
   },
   "devDependencies": {
