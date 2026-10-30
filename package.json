@@ -55,7 +55,7 @@
     "@babel/core": "^8.0.1",
     "@bring-it/npm": "^0.9.3",
     "@nice-move/all-in-base": "^0.8.6",
-    "ava": "^8.0.1",
+    "ava": "^8.1.2",
     "eslint": "^9.39.4",
     "garou": "^0.9.21",
     "prettier": "~3.8.4",
