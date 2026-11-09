@@ -1,3 +1,6 @@
+allowBuilds:
+  unrs-resolver: false
+
 configDependencies:
   pnpm-plugin-nice-move: 0.3.2+sha512-sQYAR3kZQzVoRUlhGm0BqxKULAeGmr6Xy519HuevZjIq37XTL+1P+5pWQ603T651dwzyOxjUef1hOnEHPjxPWw==
 
